@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: #fde0b6;
+    }
+
+    .bg {
+        background: url(bg.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 57vh;
+        width: 100%;
+    }
+
+    .container {
+        position: absolute;
+        top: 30%;
+        height: 435px;
+        width: 300px;
+        display: flex;
+        border-radius: 9px;
+        border: 2px solid #d4dae2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -1px -1px 8px 5px #100c0c;
+    }
+    .login-bg {
+        height: 160px;
+        width: 100%;
+        filter: blur(3px);
+        border-radius: 9px;
+    }
+
+    .login-bg img {
+        height: 100%;
+        width: 100%;
+        border-radius: 9px;
+    }
+    .box-child {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .input {
+        width: 81%;
+        height: 50px;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid rgb(66, 63, 62);
+        text-align: center;
+        margin: auto;
+        margin-top: 5px;
+        font-size: 18px;
+        color: rgb(7, 75, 231);
+        outline: none;
+    }
+
+    .input:focus {
+        background-color: transparent;
+        height: 55px;
+        text-align: left;
+    }
+
+    .login-input {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 268px;
+        width: 100%;
+        background-color: #fbfafa;
+        border-radius:0px 0px 9px 9px;
+
+    }
+
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        position: absolute;
+        display: block;
+        top: -50px;
+        left: 33%;
+        border: 3px solid white;
+        border-radius: 91px;
+    }
+
+    .id {
+        padding-top: 50px;
+    }
+
+    .id,
+    .password {
+        color: #424040;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        height: 64px;
+        width: 45%;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 5px;
+        border: none;
+        background-color: orangered;
+        font-weight: 600;
+        color: white;
+        line-height: 30px;
+        border-radius: 5px;
+
+    }
+
+   
+</style>
+
+<body>
+    <div class="bg">
+    </div>
+
+    <div class="container">
+            <div class="login-bg">
+                <img src="./icon.jpg" alt="login-background">
+            </div>
+            <div class="login-input">
+                <img src="icon.jpg" class="logo" alt="">
+                <label class="box-child id" for="user-id">USER-ID</label>
+                <input class="box-child input" type="text" name="user-id" id="user-id">
+                <label class="box-child password" for="password">PASSWORD</label>
+                <input class="box-child input" type="password" name="password" id="password">
+                <button class="box-child submit-btn" type="submit">LOGIN</button>
+            </div>
+
+    </div>
+
+</body>
+
+</html>
